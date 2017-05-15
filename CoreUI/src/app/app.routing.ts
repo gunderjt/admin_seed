@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Layouts
 import { FullLayoutComponent } from './layouts/full-layout.component';
+import { P404Component } from './pages/404.component';
+import { LoginComponent } from './pages/login.component';
 
 export const routes: Routes = [
   {
@@ -20,8 +22,19 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: './dashboard/dashboard.module#DashboardModule'
-      },
+      }
     ]
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    data: {
+      title: "Login"
+    }
+  },
+  {
+    path: '**',
+    component: P404Component
   }
 ];
 

@@ -17,6 +17,8 @@ import { AppRoutingModule } from './app.routing';
 
 // Layouts
 import { FullLayoutComponent } from './layouts/full-layout.component';
+import { P404Component } from './pages/404.component';
+import { LoginComponent } from './pages/login.component';
 
 @NgModule({
   imports: [
@@ -29,6 +31,8 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
   declarations: [
     AppComponent,
     FullLayoutComponent,
+    P404Component,
+    LoginComponent,
     NAV_DROPDOWN_DIRECTIVES,
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,
