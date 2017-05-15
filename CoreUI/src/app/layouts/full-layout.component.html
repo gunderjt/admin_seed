@@ -1,10 +1,15 @@
 <header class="app-header navbar">
-    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">&#9776;</button>
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
     <a class="navbar-brand" href="#"></a>
     <ul class="nav navbar-nav mr-auto d-md-down-none">
         <li class="nav-item">
             <a class="nav-link navbar-toggler sidebar-toggler" href="#" appSidebarToggler>&#9776;</a>
         </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item d-md-down-none">
+      <a class="nav-link navbar-toggler" href="#" appAsideMenuToggler>&#9776;</a>
+    </li>
     </ul>
 </header>
 
@@ -32,6 +37,19 @@
         </div>
         <!-- /.conainer-fluid -->
     </main>
+    <aside class="aside-menu">
+    <tabset>
+      <tab>
+        <ng-template tabHeading><i class="icon-list"></i></ng-template>
+      </tab>
+      <tab>
+        <ng-template tabHeading><i class="icon-speech"></i></ng-template>
+      </tab>
+      <tab>
+        <ng-template tabHeading><i class="icon-settings"></i></ng-template>
+      </tab>
+    </tabset>
+  </aside>
 </div>
 
 <footer class="app-footer">
